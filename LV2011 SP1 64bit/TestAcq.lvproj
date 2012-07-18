@@ -14,10 +14,6 @@
 		<Item Name="setexp.vi" Type="VI" URL="../setexp.vi"/>
 		<Item Name="SetUpAcqu.vi" Type="VI" URL="../SetUpAcqu.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="MGI Windows Folder Enum.ctl" Type="VI" URL="/&lt;userlib&gt;/_MGI/File/MGI Windows Folder Enum.ctl"/>
-				<Item Name="MGI Windows Folder Path.vi" Type="VI" URL="/&lt;userlib&gt;/_MGI/File/MGI Windows Folder Path.vi"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
@@ -104,8 +100,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="1301_02_AC_BdT_Actions.ctl" Type="VI" URL="../../../M023-01/Sources LV 2011sp1-64b/1301_02/1301_02_AC_BdT_Actions.ctl"/>
-			<Item Name="1301_02_AC_BDT_Main.vi" Type="VI" URL="../../../M023-01/Sources LV 2011sp1-64b/1301_02/1301_02_AC_BDT_Main.vi"/>
 			<Item Name="1301_BASLER_A504_Commands.vi" Type="VI" URL="../Basler - A504 Comm tool.llb/1301_BASLER_A504_Commands.vi"/>
 			<Item Name="1301_BASLER_A504_ConvertToDataString.vi" Type="VI" URL="../Basler - A504 Comm tool.llb/1301_BASLER_A504_ConvertToDataString.vi"/>
 			<Item Name="1301_BASLER_A504_MainCCT.vi" Type="VI" URL="../Basler - A504 Comm tool.llb/1301_BASLER_A504_MainCCT.vi"/>
@@ -122,11 +116,7 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="shell32.dll" Type="Document" URL="shell32.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="TDE_mode.ctl" Type="VI" URL="../TDE_mode.ctl"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
