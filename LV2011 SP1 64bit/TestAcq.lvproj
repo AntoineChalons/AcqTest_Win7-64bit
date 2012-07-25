@@ -11,6 +11,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="doc" Type="Folder">
+			<Item Name="ExSync Edge.png" Type="Document" URL="../doc/ExSync Edge.png"/>
+			<Item Name="ExSync Lev.png" Type="Document" URL="../doc/ExSync Lev.png"/>
+			<Item Name="ExSync Prog.png" Type="Document" URL="../doc/ExSync Prog.png"/>
+			<Item Name="Free Run.png" Type="Document" URL="../doc/Free Run.png"/>
+			<Item Name="max error.png" Type="Document" URL="../doc/max error.png"/>
+		</Item>
+		<Item Name="QMT techno.ico" Type="Document" URL="../QMT techno.ico"/>
 		<Item Name="setexp.vi" Type="VI" URL="../setexp.vi"/>
 		<Item Name="SetUpAcqu.vi" Type="VI" URL="../SetUpAcqu.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -117,7 +125,59 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="TDE_mode.ctl" Type="VI" URL="../TDE_mode.ctl"/>
+			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="AcqTest" Type="EXE">
+				<Property Name="App_INI_aliasGUID" Type="Str">{ADDDFFCF-1AF6-4E02-BEFC-0FBFA8455579}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{206E73AA-4C44-4802-8CD9-D4445E4AE263}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{563269C6-5E3B-4B8A-9A0B-96AC87ACFDAB}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">AcqTest</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../EXEs</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{14B1C43E-1E6C-435C-88A1-B1DB48B462FC}</Property>
+				<Property Name="Destination[0].destName" Type="Str">AcqTest.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../EXEs/AcqTest.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../EXEs/doc</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/QMT techno.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E5083F6E-48B0-4FE6-A11C-331F1F7F08A3}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SetUpAcqu.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/doc/ExSync Edge.png</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/doc/ExSync Lev.png</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/doc/ExSync Prog.png</Property>
+				<Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/doc/Free Run.png</Property>
+				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/doc/max error.png</Property>
+				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">7</Property>
+				<Property Name="TgtF_companyName" Type="Str">QMT</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">AcqTest with SSE2 optim enabled</Property>
+				<Property Name="TgtF_fileVersion.major" Type="Int">1</Property>
+				<Property Name="TgtF_internalName" Type="Str">AcqTest</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 QMT</Property>
+				<Property Name="TgtF_productName" Type="Str">AcqTest</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{5EA278F3-CC48-440D-A7FE-887422BC1B7F}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">AcqTest.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
