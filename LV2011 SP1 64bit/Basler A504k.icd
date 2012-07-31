@@ -1,77 +1,17 @@
-CameraFile (6.60) {
+CameraFile (6.64) {
    Type (Digital)
    Manufacturer (Basler)
    Model (A504k)
-   CreationDate (20011025151418)
-   InterfaceInfo (1429) {
-      AcquisitionWindow (0, 0, 1280, 1024)
-      BinaryThreshold (0, 255)
-      BitDepth (8)
-      BitsPerComponent (8)
-      NumComponents (1)
-      NumPhantomComponents (0)
-      FrameTimeout (3000)
-      LUT (Normal)
-      LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
-      MaxImageSize (1280, 1024)
-      ScanType (Area)
-      Scaling (1)
-      DetectPCLK (Yes)
-      FastRearm (No)
-      SynchronizeEnables (No)
-      ConfigDelay (0)
-      Interlaced (No)
-      Serial {
-         Baud (9600)
-         SerialDisabled (No)
-         Databits (8)
-         Parity (N)
-         DTR (High)
-         RTS (High)
-         Stopbits (1)
-         TermChars (\x06)
-      }
-      SignalLevels {
-         PGOutput (RS422)
-      }
-      ControlLinesSource {
-         UseDefaultSource (Yes)
-         CCSourceLine0 (None, 0)
-         CCSourceLine1 (None, 1)
-         CCSourceLine2 (None, 2)
-         CCSourceLine3 (None, 3)
-      }
-      TestImageType (None)
-      TestImageFrameBlanking (100)
-      TestImageLineBlanking (100)
-      NumCameraTaps (10)
-      NumCameraXZones (1)
-      NumCameraTapsPerXZone (10)
-      NumCameraYZones (1)
-      NumCameraTapsPerYZone (1)
-      XZonePixelExtractor (Left)
-      YZonePixelExtractor (Top)
-      NeedYChip (Yes)
-      NeedZChip (Yes)
-      LVALHighTrue (Yes)
-      FVALHighTrue (Yes)
-      DVALHighTrue (Yes)
-      DVALMode (0)
-      AcquisitionBitstream (EP1S20_CL_TC10T8_1X10.dat)
-      Tap (0) {
-         Position (Normal)
-         Start (Left, Top)
-      }
-   }
+   CreationDate (20120618124830)
    InterfaceInfo (1433) {
       AcquisitionWindow (0, 0, 1000, 128)
-      BinaryThreshold (0, 255)
+      BinaryThreshold (0, 200)
       BitDepth (8)
       BitsPerComponent (8)
       NumComponents (1)
       NumPhantomComponents (0)
-      Unsigned16BitImage (No)
-      FrameTimeout (2000)
+      Unsigned16BitImage (Yes)
+      FrameTimeout (3000)
       LUT (Normal)
       LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
       MaxImageSize (1280, 1024)
@@ -103,6 +43,12 @@ CameraFile (6.60) {
          CCSourceLine2 (None, 2)
          CCSourceLine3 (None, 3)
       }
+      Bayer {
+         Pattern (None)
+         RedGain (1.000000)
+         GreenGain (1.000000)
+         BlueGain (1.000000)
+      }
       TestImageType (None)
       TestImageFrameBlanking (100)
       TestImageLineBlanking (100)
@@ -111,8 +57,9 @@ CameraFile (6.60) {
       NumCameraTapsPerXZone (10)
       NumCameraYZones (1)
       NumCameraTapsPerYZone (1)
-      TenTapBitMapping (Normal)
+      BitMapping (Standard)
       TimeSlots (1)
+      InterleaveYZones (No)
       XZonePixelExtractor (Left)
       YZonePixelExtractor (Top)
       NeedYChip (Yes)
@@ -128,75 +75,16 @@ CameraFile (6.60) {
          Start (Left, Top)
       }
    }
-   InterfaceInfo (1435) {
-      AcquisitionWindow (0, 0, 1280, 1024)
-      BinaryThreshold (0, 255)
-      BitDepth (8)
-      BitsPerComponent (8)
-      NumComponents (1)
-      NumPhantomComponents (0)
-      FrameTimeout (3000)
-      LUT (Normal)
-      LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
-      MaxImageSize (1280, 1024)
-      ScanType (Area)
-      Scaling (1)
-      DetectPCLK (Yes)
-      FastRearm (No)
-      SynchronizeEnables (No)
-      ConfigDelay (0)
-      Interlaced (No)
-      Serial {
-         Baud (9600)
-         SerialDisabled (No)
-         Databits (8)
-         Parity (N)
-         DTR (High)
-         RTS (High)
-         Stopbits (1)
-         TermChars (\x06)
-      }
-      SignalLevels {
-         PGOutput (RS422)
-      }
-      ControlLinesSource {
-         UseDefaultSource (Yes)
-         CCSourceLine0 (None, 0)
-         CCSourceLine1 (None, 1)
-         CCSourceLine2 (None, 2)
-         CCSourceLine3 (None, 3)
-      }
-      TestImageType (None)
-      TestImageFrameBlanking (100)
-      TestImageLineBlanking (100)
-      NumCameraTaps (10)
-      NumCameraXZones (1)
-      NumCameraTapsPerXZone (10)
-      NumCameraYZones (1)
-      NumCameraTapsPerYZone (1)
-      TenTapBitMapping (Normal)
-      XZonePixelExtractor (Left)
-      YZonePixelExtractor (Top)
-      NeedYChip (Yes)
-      NeedZChip (Yes)
-      LVALHighTrue (Yes)
-      FVALHighTrue (Yes)
-      DVALHighTrue (Yes)
-      DVALMode (0)
-      AcquisitionBitstream (Class08.dat)
-      Tap (0) {
-         Position (Normal)
-         Start (Left, Top)
-      }
-   }
+   
+  
    Attribute (ExSync) {
       Value (List) {
          Name (Off) {
          }
-         Name (Level Controlled) {
+         Name (Programmable) {
             Attribute (Exposure) {
                Value (Integer) {
-                  Min (250)
+                  Min (10)
                   Max (16500000)
                   Increment (50)
                   Display {
@@ -206,26 +94,14 @@ CameraFile (6.60) {
                      Units (microseconds)
                   }
                   Default (2500000)
-                  Current (2500000)
-                  Action (PG) {
-                     Line (0) {
-                        Start (High)
-                        10, (Exposure)
-                     }
-                  }
+                  Current (8000)
+                  
                }
             }
          }
-         Name (Programmable) {
-            Action (PG) {
-               Line (0) {
-                  Start (Low)
-                  10, 10
-               }
-            }
-         }
+         
          Default (Off)
-         Current (Programmable)
+         Current (Off)
       }
    }
 }
